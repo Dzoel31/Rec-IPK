@@ -11,8 +11,8 @@ Untuk menjalankan proyek ini diperlukan database dengan ketentuan sebagai beriku
     |-------------| ------------| ----|
     | varchar(9) | varchar(50) | int(2)|
 
-- Tabel Mahasiswa
+- Tabel mahasiswa
 
-    | nim | Nama | tempat_tgl_lahir | email | no_telp | jurusan | semester | kode_matkul |
+    | nim | nama | tempat_tgl_lahir | email | no_telp | jurusan | semester | kode_matkul |
     |-----| ---- | ---- | --- | --- | --- | --- | --- |
     |varchar(10)| varchar(50) | varchar(32) | varchar(50) | varchar(15) | varchar(32) | int(2) | varchar(9) |
