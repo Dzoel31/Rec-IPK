@@ -17,5 +17,4 @@ function query($query) {
 function getYear() {
     return date("Y");
 }
-
 ?>
