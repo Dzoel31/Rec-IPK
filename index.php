@@ -1,8 +1,12 @@
 <?php
+session_start();
+
+if( !isset($_SESSION["login"]) ) {
+    header("Location: ./src/login.php");
+    exit;
+}
+
 require './src/controller/UserController.php';
-
-$data = query("SELECT * FROM mahasiswa");
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,13 +26,14 @@ $data = query("SELECT * FROM mahasiswa");
             <ul>
                 <li><a href="./src/input.php">Input Nilai</a></li>
                 <li><a href="./src/views.php">Lihat Nilai</a></li>
+                <li><a href="./src/logout.php">Logout</a></li>
             </ul>    
         </nav>
     </header>
     <main>
         <div>
             <div class="main-header">
-                <h1>Selamat Datang, hello world!</h1>
+                <h1>Selamat Datang, Nama</h1>
             </div>
             <div class="box-container">
                 <div class="box">
